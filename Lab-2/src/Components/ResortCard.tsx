@@ -10,9 +10,10 @@ export default function ResortCard({
     <div className="ResortCard">
       <img src={pic} alt="" width="100px" />
       <h2>{country}</h2>
-      <p>{location}</p>
-      <p>{rating}</p>
-      <p style={{ color: "red", fontWeight: "bolder" }}>{price && "SALE"}</p>
+      <i>{location}</i>
+      <p style={{ color: "red"}} >{rating < 4 && rating + "★"}</p>
+      <p style={{ color: "green"}} >{rating > 4 && rating + "★"}</p>
+      <p>{price + "/night"}</p>
     </div>
   );
 }

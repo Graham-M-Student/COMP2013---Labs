@@ -182,3 +182,31 @@
     border-right-color: var(--border);
   }
 }
+
+.ResortCard {
+  border-radius: 5px;
+  width: 120px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.ResortContainer {
+  border-radius: 10px;
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  justify-content: space-around;
+}
+
+@media (max-width: 450px) {
+  .ResortContainer {
+    flex-direction: column;
+  }
+
+  .ResortCard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px auto;
+  }
+}

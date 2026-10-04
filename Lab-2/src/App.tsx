@@ -1,12 +1,12 @@
 import './App.css'
 import ResortContainer from './Components/ResortContainer.tsx'
-import data from './data/data.ts'
+import listings from './data/data.ts'
 
 function App() {
   return (
     <>
       <h1>Resorts Lite</h1>
-      <ResortContainer data={data}/>
+      <ResortContainer data={listings}/>
     </>
   )
 }
