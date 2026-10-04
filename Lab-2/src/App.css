@@ -191,11 +191,9 @@
 }
 
 .ResortContainer {
-  border-radius: 10px;
   display: flex;
-  padding: 5px;
-  margin: 5px;
   justify-content: space-around;
+  background-color: black;
 }
 
 @media (max-width: 450px) {
